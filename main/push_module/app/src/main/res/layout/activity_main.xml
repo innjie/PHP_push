@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text=" Push Option"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=" Main Function List"
+
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="- 앱 기능 -
+            \n 1. fcm 푸쉬 수신 기능
+            \n 2. fcm에 새로운 토근 생성 요청 기능
+            \n 3. 서버에 수신여부 설정 갱신 기능
+             \n \n- 서버기능 -
+            \n 1. 다중 푸쉬 수신 및 전송 기능
+            \n 2. 사용자 수신상태 갱신 및 조회 기능
+            \n 3. fcm 사용자 토근과 메세지 전송 기능
+            \n 4. 데이터베이스 데이터 갱신 쿼리 기능
+            \n \n - 데이터베이스 기능 -
+             \n 1. 사용자 토근 및 사용 유무 저장
+
+
+
+
+
+
+
+
+
+"></TextView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Message switch:"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="OFF/ ON."
+            android:textSize="15sp"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:text="Note : 스위치를 통해 수신여부를 결정할 수 있습니다."
+        android:textColor="#8b00ff"
+        android:textSize="15sp"
+        android:textStyle="italic"></TextView>
+</LinearLayout>
